@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.calculadora {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.mensagem {
+    visibility: hidden;
+    background-color: #5cb85c;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.botoes button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botoes button:hover {
+    background-color: #555;
+}
+
+.botoes button:active {
+    background-color: #666;
+}
+
+.botoes button:focus {
+    outline: none;
+}
+
+.botoes button:nth-child(4n) {
+    background-color: #ff8c00;
+}
+
+.botoes button:nth-child(4n):hover {
+    background-color: #ff9f33;
+}
+
+.botoes button:nth-child(4n):active {
+    background-color: #ffa64d;
+}
